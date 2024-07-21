@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis AI</title>
+    <link rel="stylesheet" href="{% static 'css/chatbot-chat.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+</head>
+
+<body>
+
+
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox" />
+        <div id="nav-header"><a id="nav-title" href="xxx" target="_blank">PAYTECH</a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr/>
+        </div>
+        <div id="nav-content">
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="/" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/home.png' %}" width="20px">&nbsp;<span>Home</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="http://127.0.0.1:5500/previous-chats.html" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/left.png' %}" width="20px">&nbsp;<span>Previous Chats</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="tickets" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/ticket.png' %}" width="20px">&nbsp;<span>Your Tickets</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="http://127.0.0.1:5500/transactions.html" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/online-payment.png' %}" width="20px">&nbsp;<span>Transactions</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="http://127.0.0.1:5500/help.html" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/question.png' %}" width="20px">&nbsp;<span>Help</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="logout" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/logout.png' %}" width="20px">&nbsp;<span>Logout</span>
+                </a>
+            </div>
+            <div id="nav-content-highlight"></div>
+
+        </div>
+        <input id="nav-footer-toggle" type="checkbox" />
+        <div id="nav-footer">
+            <div id="nav-footer-heading">
+                <div id="nav-footer-avatar"><img src="{% static 'img/Popular Anime And Cartoon Characters Made Into Rugs By A Carpet Nerd (32 Pics).jpg' %}" /></div>
+                <div id="nav-footer-titlebox"><a id="nav-footer-title" href="xxx" target="_blank">User</a><span id="nav-footer-subtitle">ID</span></div>
+                <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+            </div>
+            <div id="nav-footer-content">
+                <Lorem>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Lorem>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-header-content">
+                    <div class="profile-picture">
+                        <img src="{% static 'img/logo-removebg-preview.png' %}" alt="User Avatar">
+                    </div>
+                    <div class="chatbot-info">
+                        <div class="chatbot-name">Genesis</div>
+                        <div class="bot-status">
+                            <span class="online-dot"></span> online
+                        </div>
+                    </div>
+                    <div class="profile-picture">
+                        <img src="{% static 'img/bot_pfp_x2.svg' %}" alt="Bot Avatar">
+                    </div>
+                </div>
+            </div>
+            <div class="messages"></div>
+            <div class="input-container">
+                <input type="text" id="messageInput" class="input-box" placeholder="Type a message">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>

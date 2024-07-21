@@ -1,0 +1,160 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tickets</title>
+    <link rel="stylesheet" href="{% static 'css/ticket.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My Tickets</h1>
+        </div>
+    </header>
+
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox" />
+        <div id="nav-header"><a id="nav-title" href="xxx" target="_blank">PAYTECH</a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr/>
+        </div>
+        <div id="nav-content">
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="/" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/home.png' %}" width="20px">&nbsp;<span>Home</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="http://127.0.0.1:5500/previous-chats.html" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/left.png' %}" width="20px">&nbsp;<span>Previous Chats</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="tickets" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/ticket.png' %}" width="20px">&nbsp;<span>Your Tickets</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="http://127.0.0.1:5500/transactions.html" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/online-payment.png' %}" width="20px">&nbsp;<span>Transactions</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="http://127.0.0.1:5500/help.html" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/question.png' %}" width="20px">&nbsp;<span>Help</span>
+                </a>
+            </div>
+            <div class="nav-button">
+                &nbsp;&nbsp;
+                <a href="logout" style="text-decoration: none; color: inherit;">
+                    <img src="{% static 'img/logout.png' %}" width="20px">&nbsp;<span>Logout</span>
+                </a>
+            </div>
+            <div id="nav-content-highlight"></div>
+
+        </div>
+        <input id="nav-footer-toggle" type="checkbox" />
+        <div id="nav-footer">
+            <div id="nav-footer-heading">
+                <div id="nav-footer-avatar"><img src="{% static 'img/Popular Anime And Cartoon Characters Made Into Rugs By A Carpet Nerd (32 Pics).jpg' %}" /></div>
+                <div id="nav-footer-titlebox"><a id="nav-footer-title" href="xxx" target="_blank">User</a><span id="nav-footer-subtitle">ID</span></div>
+                <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+            </div>
+            <div id="nav-footer-content">
+                <Lorem>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Lorem>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container" id="ticketcontainer">
+            <table class="ticket-table" id="ticketTable">
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Issue</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#12345</td>
+                        <td>Payment not received</td>
+                        <td class="status-open">Open</td>
+                        <td>2023-07-01</td>
+                        <td><button class="btn-view">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#12346</td>
+                        <td>Refund request</td>
+                        <td class="status-closed">Closed</td>
+                        <td>2023-06-25</td>
+                        <td><button class="btn-view">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#12345</td>
+                        <td>Transaction Stuck</td>
+                        <td class="status-open">Open</td>
+                        <td>2023-07-01</td>
+                        <td><button class="btn-view">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#13845</td>
+                        <td>Amount not credited</td>
+                        <td class="status-open">Open</td>
+                        <td>2023-07-01</td>
+                        <td><button class="btn-view">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#12295</td>
+                        <td>Refund not credited</td>
+                        <td class="status-closed">Open</td>
+                        <td>2023-07-01</td>
+                        <td><button class="btn-view">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#12233</td>
+                        <td>Payment wasn't transferred</td>
+                        <td class="status-closed">Open</td>
+                        <td>2023-07-01</td>
+                        <td><button class="btn-view">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#12485</td>
+                        <td>Amount transferred to wrong account</td>
+                        <td class="status-open">Open</td>
+                        <td>2023-07-01</td>
+                        <td><button class="btn-view">View</button></td>
+                    </tr>
+                    <!-- More ticket rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div>
+            <p>&copy; 2024 Team Genesis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>
